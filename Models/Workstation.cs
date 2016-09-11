@@ -21,18 +21,12 @@ namespace FleetEntityFramework.Models
         [Index(IsUnique = true )]
         public string WorkstationIdentifier { get; set; }
 
-        [Index]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(100)]
-        [Required]
         public string IpAddress { get; set; }
 
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(450)]
-        [Index]
         public string MacAddress { get; set; }
 
-        public int? RoomID { get; set; }
+        [Index]
+        public int RoomID { get; set; }
         public virtual Room Room { get; set; }
 
         public DateTime LastSeen { get; set; }

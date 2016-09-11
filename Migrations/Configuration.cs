@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using FleetEntityFramework.Models;
 
 namespace FleetEntityFramework.Migrations
@@ -32,6 +33,26 @@ namespace FleetEntityFramework.Migrations
             context.Applications.Add(new Application
             {
                 ApplicationName = "FileSharer"
+            });
+            var campuses = new List<Campus>
+            {
+                new Campus { CampusIdentifer = "Callaghan"},
+                new Campus { CampusIdentifer = "Ourimbah"}
+            };
+            context.Campuses.AddOrUpdate(c => c.CampusIdentifer, campuses[0], campuses[1]);
+            context.SaveChanges();
+
+            context.Buildings.Add(new Building
+            {
+                BuildingIdentifier = "Engineering Science",
+                CampusId = campuses[0].CampusId
+            });
+            context.SaveChanges();
+
+            context.Rooms.Add(new Room
+            {
+                RoomIdentifier = "ES205",
+                BuildingId = context.Buildings.First(b => b.BuildingIdentifier == "Engineering Science").BuildingId
             });
         }
     }
