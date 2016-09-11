@@ -1,0 +1,14 @@
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\FleetEntityFramework.exe.config
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\FleetEntityFramework.exe
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\FleetEntityFramework.pdb
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.csprojResolveAssemblyReference.cache
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.Migrations.Initial.resources
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.csproj.GenerateResource.Cache
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.exe
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.pdb
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.Migrations.WorkstationFriendlyName.resources
+C:\Users\tnew2_000\development\FleetServer\FleetEntityFramework\obj\Debug\FleetEntityFramework.Migrations.MakeRoomIdNull.resources
