@@ -10,7 +10,7 @@ namespace FleetEntityFramework
     {
         public static void Main(string[] args)
         {
-
+            
         }
     }
 }
