@@ -21,6 +21,9 @@ namespace FleetEntityFramework.Models
         public int CommisionedById { get; set; }
         public User CommisionedBy { get; set; }
 
+        // The optinal room that the workgroup was configured for
+        public int? RoomId { get; set; }
+
         public virtual ICollection<WorkgroupWorkstation> Workstations { get; set; }
         public virtual ICollection<Application> AllowedApplications { get; set; }
 
