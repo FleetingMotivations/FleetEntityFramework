@@ -13,7 +13,7 @@ namespace FleetEntityFramework.Migrations
             DropIndex("dbo.Workstations", new[] { "RoomID" });
             AlterColumn("dbo.Workstations", "IpAddress", c => c.String());
             AlterColumn("dbo.Workstations", "MacAddress", c => c.String());
-            AlterColumn("dbo.Workstations", "RoomID", c => c.Int(nullable: false));
+            AlterColumn("dbo.Workstations", "RoomID", c => c.Int(nullable: true));
             CreateIndex("dbo.Workstations", "RoomID");
             AddForeignKey("dbo.Workstations", "RoomID", "dbo.Rooms", "RoomId", cascadeDelete: true);
         }
