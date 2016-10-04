@@ -25,6 +25,12 @@ namespace FleetEntityFramework.Models
 
         public string MacAddress { get; set; }
 
+        // These are percentages
+        public float TopXRoomOffset { get; set; }
+        public float TopYRoomOffset { get; set; }
+        public bool IsFacilitator { get; set; }
+        public string Colour { get; set; }
+
         [Index]
         public int RoomID { get; set; }
         public virtual Room Room { get; set; }

@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201609110552214_MakeIpAddressNotRequiredAddRoomIdIndex.Designer.cs">
       <DependentUpon>201609110552214_MakeIpAddressNotRequiredAddRoomIdIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610040347416_AddWorkstationPositionDetails.cs" />
+    <Compile Include="Migrations\201610040347416_AddWorkstationPositionDetails.Designer.cs">
+      <DependentUpon>201610040347416_AddWorkstationPositionDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Building.cs" />
@@ -109,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609110552214_MakeIpAddressNotRequiredAddRoomIdIndex.resx">
       <DependentUpon>201609110552214_MakeIpAddressNotRequiredAddRoomIdIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610040347416_AddWorkstationPositionDetails.resx">
+      <DependentUpon>201610040347416_AddWorkstationPositionDetails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
