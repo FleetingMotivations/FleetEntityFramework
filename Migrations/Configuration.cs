@@ -82,7 +82,7 @@ namespace FleetEntityFramework.Migrations
             {
                 Started = DateTime.Now.AddHours(-2),
                 Expires = DateTime.Now.AddHours(-1),
-                CommisionedById = context.Users.First().UserId,
+                UserId = context.Users.First().UserId,
                 RoomId = context.Rooms.First().RoomId,
                 AllowedApplications = context.Applications.ToList(),
             });
@@ -96,7 +96,7 @@ namespace FleetEntityFramework.Migrations
                     FriendlyName = "test1",
                     TopXRoomOffset = 25,
                     TopYRoomOffset = 50,
-                    RoomID = context.Rooms.First().RoomId
+                    RoomId = context.Rooms.First().RoomId
                 },
                  new Workstation
                  {
@@ -105,7 +105,7 @@ namespace FleetEntityFramework.Migrations
                     FriendlyName = "test2",
                     TopXRoomOffset = 75,
                     TopYRoomOffset = 50,
-                    RoomID = context.Rooms.First().RoomId
+                    RoomId = context.Rooms.First().RoomId
                  }
             }.ToArray());
 

@@ -19,8 +19,8 @@ namespace FleetEntityFramework.Models
         [Required]
         public DateTime Expires { get; set; }
 
-        public int CommisionedById { get; set; }
-        public User CommisionedBy { get; set; }
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
 
         // The optinal room that the workgroup was configured for
         public int? RoomId { get; set; }

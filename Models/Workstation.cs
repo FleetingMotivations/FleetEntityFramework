@@ -32,10 +32,10 @@ namespace FleetEntityFramework.Models
         public string Colour { get; set; }
 
         [Index]
-        public int RoomID { get; set; }
+        public int RoomId { get; set; }
         public virtual Room Room { get; set; }
 
-        public DateTime LastSeen { get; set; }
+        public DateTime? LastSeen { get; set; }
 
         public virtual ICollection<WorkgroupWorkstation> Workgroups { get; set; }
         public virtual ICollection<WorkstationLogin> Logins { get; set; }
