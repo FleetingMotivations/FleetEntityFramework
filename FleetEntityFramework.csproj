@@ -95,6 +95,10 @@
     <Compile Include="Migrations\201610051429442_VirtualUserWorkgroup.Designer.cs">
       <DependentUpon>201610051429442_VirtualUserWorkgroup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610051619538_TimeAddedForWorkgroupMembers.cs" />
+    <Compile Include="Migrations\201610051619538_TimeAddedForWorkgroupMembers.Designer.cs">
+      <DependentUpon>201610051619538_TimeAddedForWorkgroupMembers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Building.cs" />
@@ -144,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610051429442_VirtualUserWorkgroup.resx">
       <DependentUpon>201610051429442_VirtualUserWorkgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610051619538_TimeAddedForWorkgroupMembers.resx">
+      <DependentUpon>201610051619538_TimeAddedForWorkgroupMembers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -118,6 +118,7 @@ namespace FleetEntityFramework.Migrations
                    WorkgroupId = context.Workgroups.First().WorkgroupId,
                    WorkstationId = context.Workstations.First().WorkstationId,
                    SharingEnabled = true,
+                   TimeAdded = DateTime.Now,
                    TimeRemoved = null
                },
                new WorkgroupWorkstation
@@ -125,6 +126,7 @@ namespace FleetEntityFramework.Migrations
                    WorkgroupId = context.Workgroups.First().WorkgroupId,
                    WorkstationId = context.Workstations.First(w => w.WorkstationIdentifier == "test2").WorkstationId,
                    SharingEnabled = false,
+                   TimeAdded = DateTime.Now,
                    TimeRemoved = null
                }
             }.ToArray());

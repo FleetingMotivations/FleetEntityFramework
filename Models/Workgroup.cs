@@ -41,7 +41,7 @@ namespace FleetEntityFramework.Models
         public static Expression<Func<Workgroup, bool>> InProgress()
         {
             var now = DateTime.Now;
-            return workgroup => workgroup.Started < now && workgroup.Started > now;
+            return workgroup => workgroup.Started < now && workgroup.Expires > now;
         }
         
         public static Expression<Func<WorkgroupWorkstation, bool>> IsInProgress()
