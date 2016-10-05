@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
+using System.Runtime.Remoting.Messaging;
 
 namespace FleetEntityFramework.Models
 {
@@ -23,6 +24,7 @@ namespace FleetEntityFramework.Models
 
         // The optinal room that the workgroup was configured for
         public int? RoomId { get; set; }
+        public virtual Room Room { get; set; }
 
         public virtual ICollection<WorkgroupWorkstation> Workstations { get; set; }
         public virtual ICollection<Application> AllowedApplications { get; set; }
@@ -34,6 +36,18 @@ namespace FleetEntityFramework.Models
                                     .Where(w => !w.TimeRemoved.HasValue)
                                     .Select(w => w.Id)
                                     .Contains(workstation.WorkstationId);
-        } 
+        }
+
+        public static Expression<Func<Workgroup, bool>> InProgress()
+        {
+            var now = DateTime.Now;
+            return workgroup => workgroup.Started < now && workgroup.Started > now;
+        }
+        
+        public static Expression<Func<WorkgroupWorkstation, bool>> IsInProgress()
+        {
+            var now = DateTime.Now;
+            return ww => ww.Workgroup.Started < now && ww.Workgroup.Expires > now;
+        }  
     }
 }
