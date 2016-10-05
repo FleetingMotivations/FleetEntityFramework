@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FleetEntityFramework.Models
 {
@@ -13,6 +14,9 @@ namespace FleetEntityFramework.Models
         public int ApplicationId { get; set; }
 
         [Required]
+        [Index(IsUnique = true)]
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(100)]
         public string ApplicationName { get; set; }
 
         public virtual ICollection<Message> Messages { get; set; }

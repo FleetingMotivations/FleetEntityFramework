@@ -83,6 +83,14 @@
     <Compile Include="Migrations\201610040713476_AddRoomIdToWorkgroup.Designer.cs">
       <DependentUpon>201610040713476_AddRoomIdToWorkgroup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610051341024_WorkgroupVirtualRoom.cs" />
+    <Compile Include="Migrations\201610051341024_WorkgroupVirtualRoom.Designer.cs">
+      <DependentUpon>201610051341024_WorkgroupVirtualRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610051348432_UniqueApplicationName.cs" />
+    <Compile Include="Migrations\201610051348432_UniqueApplicationName.Designer.cs">
+      <DependentUpon>201610051348432_UniqueApplicationName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Building.cs" />
@@ -123,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610040713476_AddRoomIdToWorkgroup.resx">
       <DependentUpon>201610040713476_AddRoomIdToWorkgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610051341024_WorkgroupVirtualRoom.resx">
+      <DependentUpon>201610051341024_WorkgroupVirtualRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610051348432_UniqueApplicationName.resx">
+      <DependentUpon>201610051348432_UniqueApplicationName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -30,7 +30,7 @@ namespace FleetEntityFramework.Migrations
             //    );
             //
 
-            context.Applications.Add(new Application
+            context.Applications.AddOrUpdate(a => a.ApplicationName, new Application
             {
                 ApplicationName = "FileSharer"
             });
