@@ -20,6 +20,7 @@ namespace FleetEntityFramework.Models
         public int WorkgroupId { get; set; }
         public virtual Workgroup Workgroup { get; set; }
 
+        public DateTime TimeAdded { get; set; }
         public DateTime? TimeRemoved { get; set; }
 
         public bool SharingEnabled { get; set; }
