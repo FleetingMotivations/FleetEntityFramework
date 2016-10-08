@@ -1,0 +1,12 @@
+﻿DROP TABLE [Applications];
+DROP TABLE Buildings;
+DROP TABLE Campus;
+DROP TABLE [Messages];
+DROP TABLE Rooms;
+DROP TABLE Users;
+DROP TABLE WorkgroupApplications;
+DROP TABLE Workgroups;
+DROP TABLE WorkgroupWorkstations;
+DROP TABLE WorkstationLogins;
+DROP TABLE WorkstationMessages;
+DROP TABLE Workstations;
